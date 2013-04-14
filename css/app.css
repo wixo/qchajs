@@ -1,0 +1,88 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+ul,ol {
+	margin: 0;
+	padding: 0;
+}
+
+.qcha-navbar {
+	padding: 0 0 0 20px!important;
+}
+
+.main {
+	position: relative;
+	top: 80px;
+}
+
+.title {
+	margin: 0 0 40px 0;
+}
+
+.search {
+	background: #ccc;
+	border-radius: 5px;
+	height: 180px;
+	padding: 20px;
+	width: 25%;
+}
+
+.search input {
+	margin: 5px 0;
+}
+
+.main-part {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.keywords-container {
+	background: whitesmoke;
+	border-radius: 5px;
+	margin: 0 0 0 1%;
+	padding: 20px;
+	width: 74%;
+}
+
+.keywords {
+	list-style: none;
+	padding: 20px;
+}
+
+.keyword {
+	cursor: pointer;
+	margin: 0 0 10px 0;
+}
+
+.keyword:hover {
+	background: #ddd;
+}
+
+.definition {
+	display: none;
+}
+
+.keywordDefintionContainer {
+	border-bottom: 1px solid #ccc ;
+	margin: 0 0 10px 0;
+	padding: 10px;
+}
+
+.keywordExample:after {
+	content: close-quote;
+}
+
+.keywordExample:before {
+	content: open-quote;
+}
+
+.keywordExample {
+	quotes: "«" "»";
+}
+
+.back {
+	display: block;
+	float: right;
+	right: 30px;
+	text-transform: capitalize;
+	width: 100px;
+}

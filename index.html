@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>qcha.es</title>
+	<link rel="stylesheet" href="components/bootstrap/docs/assets/css/bootstrap-min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script src="components/angular/angular.js"></script>
+	<script src="components/jquery/jquery.js"></script>
+	<script src="components/helm.js/helm.js"></script>
+	<script src="js/controller.js"></script>
+</head>
+<body ng-controller="KeywordListCtrl">
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner qcha-navbar">
+			<a href="/" class="brand">Qcha.es</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li>
+						<a href="about.html">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid main">
+
+		<h1 class="title">¿Qué 'cha es {{query}} ?</h1>
+
+		<div class="search main-part">
+
+			<div class="control-group">
+				<label class="control-label" for="search">Busca</label>
+				<div class="controls">
+					<input id="search" ng-model="query">
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label" for="orderBy">Ordena</label>
+				<div class="controls">
+					<select name="orderBy" id="orderBy" ng-model="orderProp">
+						<option value="name">Alfabéticamente</option>
+						<option value="id">Por inserción</option>
+					</select>
+				</div>
+			</div>
+
+		</div><div class="main-part keywords-container">
+			
+			<a class="btn back" ng-click="showKeywords($event)" href="#">atrás</a>
+
+			<ul class="keywords">
+				<li class="keyword" data-id="{{keyword.id}}" ng-click="showKeywordInside($event)" ng-repeat="keyword in keywords  | filter:query | orderBy:orderProp">
+					<h3>{{keyword.name}}</h3>
+				</li>
+			</ul>
+
+			<div class="definition"></div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+[
+	{ "id": 1,
+		"name": "Perú",
+		"definitions": [
+			{ "id": 1,
+				"content": "Laprimeracomidadeldía",
+				"examples": [
+					{ "id": 1,
+						"content": "PaísdeSudamerica"
+					}
+				]
+			},
+			{ "id": 2,
+				"content": "TierradelZamboCavero",
+				"examples": []
+			}
+		]
+	},
+	{ "id": 2,
+		"name": "Taipa",
+		"definitions": [
+			{ "id": 1,
+				"content": "Puede referirse a un plato de comida contundente o servido en abundancia, como también a una persona con algunos kilos de más.",
+				"examples": [
+					{ "id": 1,
+						"content": "Me da un tacu tacu bien Taipa."
+					}
+				]
+			},
+			{ "id": 2,
+				"content": "Un cafe de twitter",
+				"examples": [
+					{ "id": 1,
+						"content": "Me voy a la charla de Cafe Taipa"
+					}
+				]
+			}
+		]
+	},
+	{ "id": 3,
+		"name": "Habilidoso",
+		"definitions": [
+			{ "id": 1,
+				"content": "Deformación de Hábil, por lo tanto con los mismos usos.",
+				"examples": [
+					{ "id": 1,
+						"content": "Te crees habilidoso ctm."
+					},
+					{ "id": 2,
+						"content": "Otro que se cree habilidoso."
+					}
+				]
+			},
+			{ "id": 2,
+				"content": "Que tiene habilidad para hacer algo",
+				"examples": [
+					{ "id": 1,
+						"content": "Messi es un habilidoso"
+					}
+				]
+			}
+		]
+	}
+]
