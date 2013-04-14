@@ -31,7 +31,9 @@ function KeywordListCtrl( $scope, $http ) {
 			$p.attr({ 'class' : 'keywordDefinition' }).text( element.content ).appendTo( definitionContainer );
 
 			// Examples!
-			examples = !!givens.definitions[index].examples[1] ? $ul.attr({ 'class' : 'keywordExamples' }) : givens.definitions[index].examples[0] && $span.attr({ 'class' : 'keywordExample' }).text( givens.definitions[index].examples[0].content  );
+			examples = !!givens.definitions[index].examples[1] 
+			? $ul.attr({ 'class' : 'keywordExamples' }) 
+			: givens.definitions[index].examples[0] && $span.attr({ 'class' : 'keywordExample' }).text( givens.definitions[index].examples[0].content  );
 
 			!!givens.definitions[index].examples[1] && givens.definitions[index].examples.forEach( function ( exampleElement, exampleIndex ) {
 				$li.attr({ 'class' : 'keywordExample' }).text( givens.definitions[index].examples[exampleIndex].content ).appendTo( examples );
