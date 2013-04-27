@@ -11,7 +11,7 @@ function KeywordListCtrl( $scope, $http ) {
 	var buildKeywordInside;
 
 	buildKeywordInside = function ( givens ) {
-	// Will build the Keyword Section with its definitios and examples
+	// Will return the Keyword Section with its definitions and examples
 		var keywordInside
 		  , name
 		  , definitionsContainer
@@ -48,7 +48,7 @@ function KeywordListCtrl( $scope, $http ) {
 		return keywordInside;
 	}
 
-	$http.get( '/data/words.json' ).success( function ( data ) {
+	$http.get( '/data/dump.json' ).success( function ( data ) {
 		$scope.keywords = data;
 	} );
 
